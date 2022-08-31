@@ -1,0 +1,19 @@
+@keyframes colorChange {
+    0%{
+        background-color: slateblue;
+    }
+    100%{
+        background-color: brown;
+    }
+}
+
+#app4 .circle{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    border: 1px solid slateblue;
+}
+
+#app4 .circle.active{
+    animation: colorChange 1s infinite alternate linear;
+}

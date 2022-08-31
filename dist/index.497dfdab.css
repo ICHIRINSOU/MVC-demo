@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:before, :after {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+#app1 {
+  width: 50vw;
+  height: 50vh;
+}
+
+body {
+  overflow: hidden;
+}
+
+body > #container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+body > #container > div {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid gray;
+}
+
+#app2 .tabBar {
+  display: flex;
+}
+
+#app2 .tabBar > li {
+  width: 50%;
+  border: 1px solid gray;
+}
+
+#app2 .tabBar > li.selected {
+  color: #fff;
+  background-color: #b0c4de;
+}
+
+#app2 .tabContent > li {
+  display: none;
+}
+
+#app2 .tabContent > li.active {
+  display: block;
+}
+
+#app3 .square {
+  width: 10vw;
+  height: 10vw;
+  border: 1px solid gray;
+  margin-top: 10vw;
+  margin-left: 10vw;
+  transition: transform 1s;
+}
+
+#app3 .square.active {
+  transform: translateX(15vw);
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #6a5acd;
+  }
+
+  100% {
+    background-color: brown;
+  }
+}
+
+#app4 .circle {
+  width: 20vw;
+  height: 20vw;
+  border: 1px solid #6a5acd;
+  border-radius: 50%;
+}
+
+#app4 .circle.active {
+  animation: colorChange 1s linear infinite alternate;
+}
+
+/*# sourceMappingURL=index.497dfdab.css.map */
